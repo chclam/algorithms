@@ -5,7 +5,7 @@ void printNumbers(int* arr, int len);
 
 void insertionSort(int* arr, int len){
   for (int i=1; i < len; i++) {
-  int j = i;
+    int j = i;
     while (j > 0 && arr[j] < arr[j-1]) {
       int tmp = arr[j];
       arr[j] = arr[j-1];
