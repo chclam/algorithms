@@ -4,10 +4,14 @@ This is an attempt at implementing simple algorithms in increasingly lower level
 
 A few challenges that I've set up for myself are the following.
 
-  * Hello world
-  * Addition (1 + 1)
+  * Basics
+    * Hello world
+    * Variable assignment
+    * Addition and subtraction
+    * For loops
   * Insertionsort
   * Mergesort
+  * 2-Coloring on Graphs
 
 # Assembly
 Since I've got no experience coding in assembly, I had to do some reading. Following a list of sources:
@@ -16,6 +20,8 @@ Since I've got no experience coding in assembly, I had to do some reading. Follo
     * We knew that there were various assembly languages. However, there are also languages that are OS-specific due to the assembler that converts it into an executable file. For x86 on Microsoft Windows, for example, there is MASM. A more general and free type of assembler is NASM (Netwide Assembler)
   * Tutorial on Assembly: [Wikibook on x86 Assembly](https://en.wikibooks.org/wiki/X86_Assembly)
   * Book on x86 Assembly in NASM (Duntemann, 2011)
+  * Extensive guide on programming in x86 on Ubuntu (Jorgensen, 2020)
 
 # Sources
   * Duntemann, J. (2011). Assembly language step-by-step: Programming with Linux. John Wiley & Sons.
+  * Jorgensen, E. (2020). x86-64 Assembly Language Programming with Ubuntu. 
