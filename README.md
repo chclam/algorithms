@@ -4,15 +4,15 @@ This is an attempt at implementing simple algorithms in increasingly lower level
 
 A few challenges that I've set up for myself are the following.
 
-  1. Basics
+  * Basics
     * Hello world
     * Variable assignment
     * Addition and subtraction
     * For loops
-  2. Insertionsort
-  3. Mergesort
-  4. 2-Coloring on Graphs
-  5. k-vertex cover (FPT Algorithm)
+  * Insertion sort
+  * Merge sort
+  * 2-Coloring on Graphs
+  * k-vertex cover (FPT Algorithm)
 
 # Assembly
 Since I've got no experience coding in assembly, I had to do some reading. Following a list of sources:

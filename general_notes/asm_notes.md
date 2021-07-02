@@ -1,5 +1,5 @@
-# Hexidecimal System
-Humans use a decimal system for counting, computers represent numbers in a binary system. Binary systems can be hard to remember and decipher for humans, thus introducing the hexidecimal system: a base-16 numbering system. This system starts counting at 0 until 9 as you would normally expect, but 9 + 1 in hexidecimal is A, which is 10 in our conventional decimal system. Therefore, numbers 0 - 9 are represented by 0 - 9, but 10 - 15 are represented by A - F. F + 1 (15 + 1 in decimal) is then represented as 10 in hex. Following is a table of decimal -> hexidecimal:
+# Hexadecimal System
+Humans use a decimal system for counting, computers represent numbers in a binary system. Binary systems can be hard to remember and decipher for humans, thus introducing the hexadecimal system: a base-16 numbering system. This system starts counting at 0 until 9 as you would normally expect, but 9 + 1 in hexidecimal is A, which is 10 in our conventional decimal system. Therefore, numbers 0 - 9 are represented by 0 - 9, but 10 - 15 are represented by A - F. F + 1 (15 + 1 in decimal) is then represented as 10 in hex. Following is a table of decimal -> hexidecimal:
 
 | Dec | Hex |
 |-----|-----|
@@ -21,13 +21,38 @@ Humans use a decimal system for counting, computers represent numbers in a binar
 | 15  | F   |
 | 16  | 10  |
 | 17  | 11  |
+| ..  | ..  |
 
-Consider the following example. Suppose that we want to convert the following hexidecimal number to decimal:
 
-0000 000B A43B 7400
+Consider the following example. Suppose that we want to convert the following hexadecimal number to decimal:
+
+> 0000 000B A43B 7400
 
 Then the following computation is made for conversion:
 
 > 11 * (16 ** 8) + 10 * (16 ** 7) + 4 * (16 ** 6) + 3 * (16 ** 5) + 11 * (16 ** 4) + 7 * (16 ** 3) + 4 * (16 ** 2) = 50000000000
 
+Another example:
 
+> FACE
+
+can be converted as follows:
+
+> 15 * (16 ** 3) + 10 * (16 ** 2) + 12 * (16 ** 1) + 14 * (16 ** 0) = 64206
+
+Note: in order to convert this using Python, consider the following code:
+
+```python
+hex = "FACE"
+dec = int(hex, 16)
+print(f"{hex} -> {dec}")
+```
+
+# CPU Registers
+A CPU (central processing unit) consists of several core parts: ALU (arithmetic logic unit), processor registers, and cache memory. The latter two parts are there to support the ALU.
+
+## Registers
+Registers are temporary storage units inside the CPU itself. There are multiple types of registers:
+
+  * General purpose registers (GPRs)
+  * 
