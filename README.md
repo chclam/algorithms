@@ -1,17 +1,18 @@
 # Into the Depths
 It's hard to program well. Modern programming languages are convenient and black boxy. But this causes us to distance ourselves more and more from the inner workings of the technology.
-This is an attempt at implementing simple algorithms in increasingly lower level of abstraction. For each "algorithm" or rather "challenge", we first implement it in a language in a higher level language such as Python or Javascript, and then in C, and then in NASM assembly (for now x86 since I'm on an Intel CPU).
+This is an attempt at implementing simple algorithms in increasingly lower level of abstraction. For each "algorithm" or rather "challenge", we first implement it in a higher level language such as Python or Javascript, and then in C, and then in NASM assembly (for now x86 since I'm on an Intel CPU).
 
 A few challenges that I've set up for myself are the following.
 
-  * Basics
+  1. Basics
     * Hello world
     * Variable assignment
     * Addition and subtraction
     * For loops
-  * Insertionsort
-  * Mergesort
-  * 2-Coloring on Graphs
+  2. Insertionsort
+  3. Mergesort
+  4. 2-Coloring on Graphs
+  5. k-vertex cover (FPT Algorithm)
 
 # Assembly
 Since I've got no experience coding in assembly, I had to do some reading. Following a list of sources:
