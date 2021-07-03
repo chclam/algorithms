@@ -8,6 +8,7 @@ A few challenges that I've set up for myself are the following.
     * Hello world
     * Variable assignment
     * Addition and subtraction
+    * Conditional branching
     * For loops
   * Insertion sort
   * Merge sort
