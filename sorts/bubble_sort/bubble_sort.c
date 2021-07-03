@@ -28,5 +28,6 @@ int main() {
   printNumbers(arr, n);
   bubbleSort(arr, n);
   printNumbers(arr, n);
+  return 0;
 }
 
