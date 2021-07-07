@@ -1,5 +1,12 @@
 # Hexadecimal System
-Humans use a decimal system for counting, computers represent numbers in a binary system. Binary systems can be hard to remember and decipher for humans, thus introducing the hexadecimal system: a base-16 numbering system. This system starts counting at 0 until 9 as you would normally expect, but 9 + 1 in hexidecimal is A, which is 10 in our conventional decimal system. Therefore, numbers 0 - 9 are represented by 0 - 9, but 10 - 15 are represented by A - F. F + 1 (15 + 1 in decimal) is then represented as 10 in hex. Following is a table of decimal -> hexidecimal:
+Humans use a decimal system for counting, computers represent numbers in a
+binary system. Binary systems can be hard to remember and decipher for humans,
+thus introducing the hexadecimal system: a base-16 numbering system. This
+system starts counting at 0 until 9 as you would normally expect, but 9 + 1 in
+hexidecimal is A, which is 10 in our conventional decimal system. Therefore,
+numbers 0 - 9 are represented by 0 - 9, but 10 - 15 are represented by A - F. F
++ 1 (15 + 1 in decimal) is then represented as 10 in hex. Following is a table
+of decimal -> hexidecimal:
 
 | Dec | Hex |
 |-----|-----|
@@ -49,10 +56,19 @@ print(f"{hex} -> {dec}")
 ```
 
 # CPU Registers
-A CPU (central processing unit) consists of several core parts: ALU (arithmetic logic unit), processor registers, and cache memory. The latter two parts are there to support the ALU.
+A CPU (central processing unit) consists of several core parts: ALU (arithmetic
+logic unit), processor registers, and cache memory. The latter two parts are
+there to support the ALU.
 
 ## Registers
-Registers are temporary storage units inside the CPU itself. There are multiple types of registers:
+Registers are temporary storage units inside the CPU itself. My expectation is that declared variables in C are stored in here (and maybe stored in deeper levels of cache or even RAM when not used for a long time). There are multiple types of registers:
 
-  * General purpose registers (GPRs)
-  * 
+  * General purpose registers (GPRs): As the name suggests, can be used for all kinds of purposes. Not sure what this really entails until really used.
+  * Stack Pointer Register (RSP): 
+  * Base Pointer Register (RBP):
+  * Instruction Poiter Register (RIP):
+  * Flag Register (rFlags):
+  * XMM Registers:
+  
+## Cache Memory
+

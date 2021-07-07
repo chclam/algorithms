@@ -1,10 +1,9 @@
-from math import floor
 
 def binary_search(li, q):
   l = 0
   r = len(li) - 1
   while r - l > 0:
-    m = floor((r + l) / 2)
+    m = (r + l) // 2
     if q < li[m]:
       r = m - 1
     elif q > li[m]:

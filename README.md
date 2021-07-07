@@ -10,9 +10,9 @@ A few challenges that I've set up for myself are the following.
     * Addition and subtraction
     * Conditional branching
     * For loops
-  * Insertion sort
-  * Merge sort
-  * 2-Coloring on Graphs
+  [x] Insertionsort
+  [x] Binary search
+  [x] Mergesort
   * k-vertex cover (FPT Algorithm)
 
 # Assembly

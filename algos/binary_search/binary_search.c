@@ -1,9 +1,6 @@
 #include <stdio.h>
 #include <math.h>
 
-int binarySearch(int *arr, int len, int q);
-void printNumbers(int *arr, int len);
-
 int binarySearch(int *arr, int len, int q) {
   int l = 0;
   int r = len - 1;
