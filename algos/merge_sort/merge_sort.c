@@ -2,13 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-void printNumbers(int *arr, int len) {
-  for (int i=0; i < len; i++) {
-    printf("%d ", arr[i]);
-  }
-  printf("\n");
-}
-
 void mergeSort(int *arr, int len) {
   if (len == 1) {
     return;
@@ -54,6 +47,13 @@ void mergeSort(int *arr, int len) {
   }
   memcpy(arr, rt, sizeof(int) * len);
   free(rt);
+}
+
+void printNumbers(int *arr, int len) {
+  for (int i=0; i < len; i++) {
+    printf("%d ", arr[i]);
+  }
+  printf("\n");
 }
 
 int main() {
