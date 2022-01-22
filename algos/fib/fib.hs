@@ -5,4 +5,4 @@ fib n
   | otherwise = fib (n - 1) + fib (n - 2)
 
 main = do
-  print(fib 30)
+  print $ fib 30
