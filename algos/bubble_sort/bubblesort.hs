@@ -6,7 +6,7 @@ swap (x:y:xs) =
 
 bSort :: [Int] -> [Int]
 bSort [] = []
-bSort a = [(head $ swapped)] ++ (bSort $ tail (swapped))
+bSort a = [(head $ swapped)] ++ (bSort $ tail swapped)
   where swapped = swap a
 
 main :: IO()
