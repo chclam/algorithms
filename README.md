@@ -26,7 +26,7 @@ Following a list of sources:
 # Haskell
 Again, a list of sources:
 
-  * The wiki seems to be a good source for reference: [https://wiki.haskell.org/Haskell];
+  * The wiki seems to be a good source for reference: [Haskell Wiki](https://wiki.haskell.org/Haskell);
 
 # References
   * Duntemann, J. (2011). Assembly language step-by-step: Programming with Linux. John Wiley & Sons.
