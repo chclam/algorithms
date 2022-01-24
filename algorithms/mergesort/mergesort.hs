@@ -11,6 +11,7 @@ mergeSort [x] = [x]
 mergeSort a = merge (mergeSort $ take m a) (mergeSort $ drop m a)
   where m = div (length a) 2
 
+main :: IO()
 main = do
   let a = [3, 2, 1, 4, 5, 8, 7, 6]
   print $ mergeSort a
