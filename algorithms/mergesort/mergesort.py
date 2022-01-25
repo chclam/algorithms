@@ -1,29 +1,31 @@
+def mergesort(a):
+  if len(a) == 1:
+    return a
+  if len(a) == 2:
+    if a[0] < a[1]:
+      return a
+    else:
+      return [a[1], a[0]]
 
-def mergesort(li):
-  if len(li) == 1:
-    return li
-
-  m = len(li) // 2
-  l = li[:m]
-  r = li[m:]
-  l = mergesort(l)
-  r = mergesort(r)
+  m = len(a) // 2
+  l = mergesort(a[:m])
+  r = mergesort(a[m:])
 
   ret = []
   while len(l) > 0 or len(r) > 0:
-    if len(l) > 0 and len(r) > 0:
+    if len(l) == 0:
+      ret.append(r.pop(0))
+      continue
+    elif len(r) == 0:
+      ret.append(l.pop(0))
+    else:
       if l[0] <= r[0]:
         ret.append(l.pop(0))
       else:
         ret.append(r.pop(0))
-    elif len(r) > 0:
-      ret.extend(r)
-      r = []
-    elif len(l) > 0:
-      ret.extend(l)
-      l = []
   return ret
 
-li = [8, 5, 2, 3, 1, 9, 4, 6, 7, 0, 2]  
-print(li)
-print(mergesort(li))
+if __name__ == "__main__":
+  a = [5, 2, 1, 6, 7, 8, 7, 10, 4, 0, 3]
+  a = mergesort(a)
+  print(a)
