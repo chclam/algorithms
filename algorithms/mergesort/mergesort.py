@@ -2,10 +2,10 @@ def mergesort(a):
   if len(a) == 1:
     return a
   if len(a) == 2:
-    if a[0] < a[1]:
-      return a
-    else:
+    if a[0] > a[1]:
       return [a[1], a[0]]
+    else:
+      return a
 
   m = len(a) // 2
   l = mergesort(a[:m])
