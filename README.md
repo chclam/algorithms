@@ -4,15 +4,18 @@ This is an attempt at implementing simple algorithms in increasingly lower level
 
 A few challenges that I've set up for myself are the following.
 
-  * Basics
+  * Basics (only for assembly)
     * Hello world
     * Variable assignment
     * Addition and subtraction
     * Conditional branching
     * For loops
+  * Min
+  * Bubblesort
   * Insertionsort
-  * Binary search
+  * Binarysearch
   * Mergesort
+  * Quicksort
 
 # Assembly
 Following a list of sources:
@@ -31,3 +34,4 @@ Again, a list of sources:
 # References
   * Duntemann, J. (2011). Assembly language step-by-step: Programming with Linux. John Wiley & Sons.
   * Jorgensen, E. (2020). x86-64 Assembly Language Programming with Ubuntu. 
+
