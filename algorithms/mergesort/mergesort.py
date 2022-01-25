@@ -14,10 +14,11 @@ def mergesort(a):
   ret = []
   while len(l) > 0 or len(r) > 0:
     if len(l) == 0:
-      ret.append(r.pop(0))
-      continue
+      ret.extend(r)
+      r = []
     elif len(r) == 0:
-      ret.append(l.pop(0))
+      ret.extend(l)
+      l = []
     else:
       if l[0] <= r[0]:
         ret.append(l.pop(0))
