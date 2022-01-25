@@ -11,6 +11,8 @@ A few challenges that I've set up for myself are the following.
     * Conditional branching
     * For loops
   * Min
+  * Sum
+  * Fibonacci
   * Bubblesort
   * Insertionsort
   * Binarysearch
