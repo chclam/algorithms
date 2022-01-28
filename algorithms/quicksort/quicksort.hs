@@ -1,19 +1,10 @@
-partitionLower :: Int -> [Int] -> [Int]
-partitionLower _ [] = []
-partitionLower p (x:xs) =
-  if x > p then (partitionLower p xs)
-  else x:(partitionLower p xs)
-
-partitionUpper :: Int -> [Int] -> [Int]
-partitionUpper _ [] = []
-partitionUpper p (x:xs) =
-  if x > p then x:(partitionUpper p xs)
-  else (partitionUpper p xs)
-
 quickSort :: [Int] -> [Int]
 quickSort [] = []
 quickSort [x] = [x]
-quickSort (x:xs) = quickSort(partitionLower x xs) ++ [x] ++ quickSort(partitionUpper x xs)
+quickSort (x:xs) = 
+  let lower = [y | y <- xs, y <= x]
+      upper = [y | y <- xs, y > x]
+  in quickSort(lower) ++ [x] ++ quickSort(upper)
 
 main :: IO()
 main = do
