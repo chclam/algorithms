@@ -3,8 +3,8 @@ quickSort [] = []
 quickSort [x] = [x]
 quickSort (x:xs) = 
   let lower = [y | y <- xs, y <= x]
-      upper = [y | y <- xs, y > x]
-  in quickSort(lower) ++ [x] ++ quickSort(upper)
+      upper = [y | y <- xs, y > x] in 
+  quickSort(lower) ++ [x] ++ quickSort(upper)
 
 main :: IO()
 main = do
