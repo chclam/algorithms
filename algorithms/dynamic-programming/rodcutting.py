@@ -13,10 +13,10 @@ def rod_cutting_bt(n, p):
   r = [-1 for i in range(len(p)+1)]
   r[0] = 0
   for j in range(1, n+1):
-    ret = p[j]
+    q = p[j]
     for i in range(1, j):
-      ret = max(ret, r[i] + r[j-i])
-    r[j] = ret
+      q = max(q, r[i] + r[j-i])
+    r[j] = q 
   return r[n]
 
 if __name__ == "__main__":
