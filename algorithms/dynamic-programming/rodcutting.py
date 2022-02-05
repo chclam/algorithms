@@ -20,7 +20,7 @@ def rod_cutting_bt(n, p):
   return r[n]
 
 if __name__ == "__main__":
-  p = {1: 1, 2: 5, 3: 8, 4: 9, 5: 10, 6: 17, 7: 17, 8: 20, 9: 24, 10: 30}
+  p = [0, 1, 5, 8, 9, 10, 17, 17, 20, 24, 30]
   r = [-1 for i in range(len(p)+1)]
   print(rod_cutting_tb(10, p, r))
   print(rod_cutting_bt(10, p))
