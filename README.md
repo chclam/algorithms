@@ -18,6 +18,7 @@ A few challenges that I've set up for myself are the following.
   * Binarysearch
   * Mergesort
   * Quicksort
+  * Dynamic Programming
 
 # Assembly
 Following a list of sources:
