@@ -18,10 +18,11 @@ int rodCuttingTb(int n, int *p, int *r){
 }
 
 int rodCuttingBt(int n, int *p, int p_n){
-  int *r = malloc(p_n * sizeof(int));
-  for (int i=1; i<p_n; i++) {
+  int r[p_n];
+  for (int i=0; i<p_n; i++) {
     r[i] = -1;
   }
+  r[0] = 0;
   for (int j=1; j<n+1; j++) {
     int q = p[j];
     for (int i=1; i<j; i++) {
@@ -32,18 +33,16 @@ int rodCuttingBt(int n, int *p, int p_n){
     }
     r[j] = q;
   }
-  free(r);
   return r[n];
 }
 
 int main(){
   int p[] = {0, 1, 5, 8, 9, 10, 17, 17, 20, 24, 30};
   int p_n = sizeof(p)/sizeof(int);
-  int *r = malloc(p_n * sizeof(int));
+  int r[p_n];
   for (int i=0; i<p_n; i++) {
     r[i] = -1;
   }
   printf("%d\n", rodCuttingTb(10, p, r));
-  free(r);
   printf("%d\n", rodCuttingBt(10, p, p_n));
 }
