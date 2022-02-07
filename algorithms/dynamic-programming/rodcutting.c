@@ -19,9 +19,6 @@ int rodCuttingTb(int n, int *p, int *r){
 
 int rodCuttingBt(int n, int *p, int p_n){
   int r[p_n];
-  for (int i=1; i<p_n; i++) {
-    r[i] = -1;
-  }
   r[0] = 0;
   for (int j=1; j<n+1; j++) {
     int q = p[j];
