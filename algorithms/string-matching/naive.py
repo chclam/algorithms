@@ -3,11 +3,11 @@ def naive(t, p):
   j = 0
   while i < len(t) and j < len(p):
     if t[i] == p[j]:
+      i += 1
       j += 1
     else:
-      i = i - j
+      i = i - j + 1
       j = 0
-    i += 1
   if j == len(p):
     return i - len(p)
   return -1
