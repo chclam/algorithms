@@ -3,14 +3,14 @@
 int naive(char *t, char *p, int n, int m) {
   int i = 0;
   int j = 0;
-  while (i < n && j < m-1) {
+  while (i < n-1 && j < m-1) {
     if (t[i] == p[j]) {
       i++;
       j++;
     }
     else {
-      j = 0;
       i = i - j + 1;
+      j = 0;
     }
   }
   if (j == m-1) {
