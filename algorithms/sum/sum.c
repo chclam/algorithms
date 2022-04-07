@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 int sum(int *a, int len) {
   if (len == 0) 
     return 0;
@@ -13,5 +15,6 @@ int sum(int *a, int len) {
 int main() {
   int a[] = {5, 2, 6, 1, 7, 1, 10, 9, 3};
   int len = sizeof(a) / sizeof(int);
-  int y = sum(a, len);
+  int s = sum(a, len);
+  printf("%d\n", s);
 }
